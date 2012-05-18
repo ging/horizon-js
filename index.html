@@ -36,10 +36,40 @@
 <p>Horizon-js is a Backbone-based web application that provides same functionality than OpenStack Horizon component. It aims to improve user experience in the near future by dynamically loading different parts of the web.</p>
 
 <p>It has been initially developed by UPM (Universidad Politecnica de Madrid) in Spain.</p>
-<embed name="player" src="http://stream.globalplaza.org/reproductor/mediaplayer-new.swf?file=fiware/fiware1&amp;searchbar=false&amp;displayheight=480&amp;displaywidth=640&amp;autostart=true&amp;bufferlength=3&amp;streamer=rtmpt://stream.globalplaza.org/venusStore/_definst_/" allowfullscreen="true" wmode="transparent" height="500" width="640" style="display: block !important; ">
-<h3>Libraries</h3>
+<embed name="player" src="http://stream.globalplaza.org/reproductor/mediaplayer-new.swf?file=fiware/fiware1&amp;searchbar=false&amp;displayheight=480&amp;displaywidth=640&amp;autostart=false&amp;bufferlength=3&amp;streamer=rtmpt://stream.globalplaza.org/venusStore/_definst_/" allowfullscreen="true" wmode="transparent" height="500" width="640" style="display: block !important; ">
 
-<p>Horizon-js uses the next JS libraries: Backbone, jQuery, Underscore, Require, Bootstrap and JStack. JStack is an Openstack API implementation fully developed in JavaScript.</p>
+<h3>Architecture</h3>
+
+<p>The architecture can be seen in the next figure</p>
+<img src="images/architecture.jpg" width="640" height="480"/>
+
+<p>Horizon-js uses the next JS libraries:</p>
+<ul>
+<li><strong>jstack</strong>: JavaScript implementation of OpenStack API<br/>It supports
+<ul>
+<li>Keystone User API</li>
+<li>Nova API</li>
+<li>Glance API</li>
+</ul>
+</li>
+<li><strong>Backbone.js</strong>: Gives structure to web applications<br/>
+<ul>
+<li>Models with key-value binding and custom events</li>
+<li>Collections with a rich API of enumerable functions</li>
+<li>Views with declarative event handling</li>
+<li>Connects it all to your existing API over a RESTful JSON interface</li>
+</ul>
+</li>
+<li><strong>jQuery</strong>: Simplifies <br/>
+<ul>
+<li>HTML document traversing</li>
+<li>Event handling</li>
+<li>Animating</li>
+<li>Ajax interactions for rapid web development.</li>
+</ul></li>
+<li><strong>Bootstrap</strong>: Responsive Design.</li>
+<li><strong>Underscore</strong>: Templates.</li>
+</ul>
 
 <h3>Authors and Contributors</h3>
 
